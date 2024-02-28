@@ -1,0 +1,268 @@
+.main__container{
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient(to bottom,rgb(253, 253, 253),rgb(212, 212, 92));
+}
+.company__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company__logo img{
+      height: 86px;
+      width: 290px;
+}
+.gap{
+      height: 100vh;
+      width: 100vw;
+}
+/* ------------------------------------------------ Middle Section  ------------------------------------------------ */
+
+.middle__section{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    position: relative;
+    flex-wrap: wrap;
+}
+.left__section{
+     flex-basis: 38%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.left__section img{
+      height: 540px;
+      width: 350px;
+}
+.right__section{
+      display: flex;
+      align-items: center; 
+      justify-content: start;
+      flex-direction: column;
+      flex-basis: 56%; 
+}
+.right__section .upper__text{
+      text-align: start;
+}
+.upper__text span{
+      font-size: 0.9rem;
+      font-weight: 700;
+}
+.right__section ul li{
+      font-size: 14px;
+      color: #000;
+}
+.right__section img{
+      height: 400px;
+      width: 100%;
+}
+.lower__text span{
+    font-size: 14px;
+    color: #000;
+    text-align: start;
+    margin-top: 1rem;
+}
+
+/* ----------------------------------------- Bottom Section  ---------------------------------------------------------- */
+.bottom__section{
+      margin-top: 2rem;
+      width: 100%;
+      position: relative;
+      text-align: center;
+}
+.bottom__section .top__heading{
+      text-align: center;
+}
+.top__heading span{
+      font-weight: 500;
+      color: #000;
+      font-size: 0.9rem;
+}
+.tools__section{
+      height: 400px;
+      margin-top: 1rem;
+}
+.tools__section img{
+      height: 400px;
+      width: 80%;
+}
+.bottom__text{
+    margin-bottom: 1rem;
+}
+
+.border__design{
+     height: 2px;
+     background: red;
+     width: 100%;
+}
+.red-pipe::after {
+    content: '|';
+    color: red;
+    margin: 0 5px; /* Adjust the spacing around the pipe symbol as needed */
+  }
+.bottom__heading p{
+    font-weight: 700;
+}
+
+/* --------------------------------------------- Footer Section  --------------------------------------------------- */
+.footer__section{
+    width: 97%;
+    height: 100px;
+    margin:20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:2rem;
+    background:red;
+    margin-bottom: 1.6rem;
+
+}
+.reference__links{
+      display: flex;
+      align-items: center;
+      gap:1rem;
+      color: #fff;
+      padding: 10px 0px;
+}
+.reference__links i{
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+}
+
+  /* --------------------------------- Responsive Design ------------------------------------ */
+
+
+  /* ------------------------------ For Tablet Devices ---------------------------------------- */
+  @media screen and (max-width:780px) {
+      .left__section{
+             flex-basis: 20%;
+      }
+      .left__section img{
+              height: 490px;
+              width: 290px;
+      }
+      .upper__text{
+            text-align: start;
+      }
+      .upper__text span{
+            font-size: 0.7rem;
+      }
+      .right__section{
+            flex-basis: 85%;
+      }
+      .right__section ul li{
+            font-size: 12px;
+            color: #000;
+      }
+      .right__section img{
+            height: 300px;
+            width: 100%;
+      }
+      .lower__text span{
+            font-size: 12px;
+            color: #000;
+            text-align: start;
+            margin-top: 1rem;
+        }
+        .bottom__section{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin:0 auto;
+        }
+        .top__heading{
+            margin-top: 2rem;
+        }
+        .top__heading span{
+            font-weight: 500;
+            color: #000;
+            font-size: 0.8rem;
+      }
+      .tools__section img{
+            width: 100%;
+      }
+      .bottom__heading span{
+            font-size: 14px;
+        }
+
+      .footer__section{
+            width: 94%;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+      }
+      .reference__links i{
+            font-size: 1rem;
+            color: #fff;
+            cursor: pointer;
+      }
+      .reference__links p{
+             font-size: 10px;
+      }
+  }
+
+  /* ---------------------- For Mobile Devices -------------------------------------- */
+  @media screen and (max-width:430px) {
+      .company__logo img{
+            height: 69px;
+            width: 250px;
+      }
+      .left__section img{
+            height: 430px;
+            width: 250px;
+      }  
+      .right__section{
+           flex-basis: 90%;
+      }
+      .right__section .upper__text{
+            width: 100%; 
+      }
+      .right__section .upper__text span{
+            font-size: 1rem;
+      }
+      .right__section img{
+            height: 250px;
+            width: 100%;
+      }
+      .top__heading span{
+            font-weight: 500;
+            color: #000;
+            font-size: 0.7rem;
+      }
+      .tools__section img{
+            height: 320px;
+            width: 100%;
+      }
+      .bottom__text{
+            font-size: 1.1rem;
+            font-weight: 500;
+      }
+      .bottom__heading span{
+            font-size: 12px;
+      }
+      .footer__section{
+             width: 96%;
+      }
+      .reference__links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+      }
+      .reference__links i{
+            font-size: 0.8rem;
+            color: #fff;
+            cursor: pointer;
+      }
+      .reference__links p{
+             font-size: 7px;
+      }
+  }
